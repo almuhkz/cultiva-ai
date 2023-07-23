@@ -9,8 +9,7 @@ export default async function SignInPage() {
     redirect('/')
   }
   return (
-    <div className='bg-[url("https://i.postimg.cc/h483rM0x/pexels-tom-fisk-1483880.jpg")] justify-center'>
-      
+    <div>
       <div className="mx-auto max-w-2xl px-4">
       <div className="rounded-lg border bg-background p-8">
         <h1 className="mb-2 text-lg font-semibold">
