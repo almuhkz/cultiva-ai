@@ -9,7 +9,7 @@ export default async function SignInPage() {
     redirect('/')
   }
   return (
-    <div className='bg-[url("https://i.postimg.cc/h483rM0x/pexels-tom-fisk-1483880.jpg")] w-full h-full bg-no-repeat bg-cover bg-left bg-fixed flex h-[calc(100vh-theme(spacing.16))] items-center justify-center py-5 relative'>
+    <div className='bg-[url("https://i.postimg.cc/h483rM0x/pexels-tom-fisk-1483880.jpg")] justify-center'>
       
       <div className="mx-auto max-w-2xl px-4">
       <div className="rounded-lg border bg-background p-8">
