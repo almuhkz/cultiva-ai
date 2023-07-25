@@ -1,5 +1,4 @@
 
-import Balancer from "react-wrap-balancer";
 
 export default function Landing() {
   return (
@@ -19,9 +18,7 @@ export default function Landing() {
           className="mt-6 animate-fade-up text-center text-gray-500 opacity- md:text-xl"
           style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
         >
-          <Balancer>
           Powered by advanced AI. Get personalized advice, real-time weather data, and optimize your agricultural practices for maximum crop yields and profitability.
-          </Balancer>
         </p>
       </div>
     </>
