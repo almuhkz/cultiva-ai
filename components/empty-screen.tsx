@@ -6,16 +6,16 @@ import { IconArrowRight } from '@/components/ui/icons'
 
 const exampleMessages = [
   {
-    heading: 'Crop Recommendations',
-    message: `Which crops are suitable for Almaty region?`
+    heading: 'Рекомендации по выращиванию сельскохозяйственных культур',
+    message: `Какие сельскохозяйственные культуры подходят для Алматинской области?`
   },
   {
-    heading: 'Pest Control',
-    message: 'What are the most effective organic methods for pest control in agriculture? \n'
+    heading: 'Борьба с вредителями',
+    message: 'Каковы наиболее эффективные органические методы борьбы с вредителями в сельском хозяйстве? \n'
   },
   {
-    heading: 'Soil Health',
-    message: `How can farmers improve soil health and fertility to increase crop yields? \n`
+    heading: 'Состояние почвы',
+    message: `Как фермеры могут улучшить состояние и плодородие почвы для повышения урожайности?\n`
   }
 ]
 
@@ -24,13 +24,13 @@ export function EmptyScreen({ setInput }: Pick<UseChatHelpers, 'setInput'>) {
     <div className="mx-auto max-w-2xl px-4">
       <div className="rounded-lg border bg-background p-8">
         <h1 className="mb-2 text-lg font-semibold">
-          Welcome to CultivaAI Chatbot!
+          Добро пожаловать в чатбот CultivaAI!
         </h1>
         <p className="mb-2 leading-normal text-muted-foreground">
-          CultivaAI: AI-powered farming companion for personalized crop advice, real-time insights, and increased profitability.
+        CultivaAI: сельскохозяйственный компаньон на базе искусственного интеллекта для персонализированных рекомендаций по выращиванию культур, получения информации в режиме реального времени и повышения рентабельности.
         </p>
         <p className="leading-normal text-muted-foreground">
-          You can start a conversation here or try the following examples:
+          Вы можете начать разговор здесь или попробовать следующие примеры:
         </p>
         <div className="mt-4 flex flex-col items-start space-y-2">
           {exampleMessages.map((message, index) => (
