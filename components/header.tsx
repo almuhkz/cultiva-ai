@@ -37,8 +37,11 @@ export async function Header() {
           </Sidebar>
         ) : (
           <Link href="/" target="_blank" rel="nofollow">
-            <IconNextChat className="w-6 h-6 mr-2 dark:hidden" inverted />
-            <IconNextChat className="hidden w-6 h-6 mr-2 dark:block" />
+          <img
+            className="h-8 w-8"
+            src="https://i.ibb.co/gjd8Bkd/apple-touch-icon.png"
+            alt="CultivaAI Logo"
+          />
           </Link>
         )}
         <div className="flex items-center">
@@ -47,7 +50,7 @@ export async function Header() {
             <UserMenu user={session.user} />
           ) : (
             <Button variant="link" asChild className="-ml-2">
-              <Link href="/sign-in?callbackUrl=/">Login</Link>
+              Login
             </Button>
           )}
         </div>

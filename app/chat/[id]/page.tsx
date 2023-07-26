@@ -45,6 +45,6 @@ export default async function ChatPage({ params }: ChatPageProps) {
   if (chat?.userId !== session?.user?.id) {
     notFound()
   }
-
-  return <Chat id={chat.id} initialMessages={chat.messages} />
+  const messagesWithoutFirst = chat.messages.slice(1);
+  return <Chat id={chat.id} initialMessages={messagesWithoutFirst} />
 }
