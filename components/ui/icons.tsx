@@ -2,6 +2,7 @@
 
 import * as React from 'react'
 import logo from '../../public/cultiva.png'
+import google from '../../public/google.png'
 
 import { cn } from '@/lib/utils'
 
@@ -92,6 +93,11 @@ function IconNextChat({
 function IconOpenAI({ className, ...props }: React.ComponentProps<'svg'>) {
   return (
     <img className="" src={logo.src}/>
+  )
+}
+function IconGoogle({ className, ...props }: React.ComponentProps<'svg'>) {
+  return (
+    <img className="h-4 w-4 mr-2" src={google.src}/>
   )
 }
 
@@ -473,6 +479,7 @@ export {
   IconOpenAI,
   IconVercel,
   IconGitHub,
+  IconGoogle,
   IconSeparator,
   IconArrowDown,
   IconArrowRight,

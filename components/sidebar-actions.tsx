@@ -181,7 +181,7 @@ export function SidebarActions({
           </AlertDialogHeader>
           <AlertDialogFooter>
             <AlertDialogCancel disabled={isRemovePending}>
-              Cancel
+              Отмена
             </AlertDialogCancel>
             <AlertDialogAction
               disabled={isRemovePending}
@@ -206,7 +206,7 @@ export function SidebarActions({
               }}
             >
               {isRemovePending && <IconSpinner className="mr-2 animate-spin" />}
-              Delete
+              Удалить
             </AlertDialogAction>
           </AlertDialogFooter>
         </AlertDialogContent>
