@@ -42,7 +42,7 @@ export function ChatPanel({
               className="bg-background"
             >
               <IconStop className="mr-2" />
-              Stop generating
+              Остановить генерацию
             </Button>
           ) : (
             messages?.length > 0 && (
@@ -52,7 +52,7 @@ export function ChatPanel({
                 className="bg-background"
               >
                 <IconRefresh className="mr-2" />
-                Regenerate response
+                Сгенерировать ответ снова
               </Button>
             )
           )}

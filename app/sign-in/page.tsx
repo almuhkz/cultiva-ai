@@ -1,5 +1,7 @@
 import { auth } from '@/auth'
 import { LoginButton } from '@/components/login-button'
+import { LoginButtonGoogle } from '@/components/login-button-google'
+
 import { redirect } from 'next/navigation'
 import bg from '../../public/bg.jpg'
 import logo from '../../public/lg.png'
@@ -34,7 +36,7 @@ export default async function SignInPage() {
               </div>
               <div className=''>
                 <LoginButton />
-                <LoginButton />
+                <LoginButtonGoogle />
               </div>
             </div>
           </div>

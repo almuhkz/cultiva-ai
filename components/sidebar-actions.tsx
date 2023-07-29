@@ -174,10 +174,9 @@ export function SidebarActions({
       <AlertDialog open={deleteDialogOpen} onOpenChange={setDeleteDialogOpen}>
         <AlertDialogContent>
           <AlertDialogHeader>
-            <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
+            <AlertDialogTitle>Вы уверены?</AlertDialogTitle>
             <AlertDialogDescription>
-              This will permanently delete your chat message and remove your
-              data from our servers.
+              Это приведет к окончательному удалению истории чатов и удалению ваших данных с наших серверов.
             </AlertDialogDescription>
           </AlertDialogHeader>
           <AlertDialogFooter>
