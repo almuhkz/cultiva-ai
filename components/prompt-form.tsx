@@ -12,6 +12,7 @@ import {
 import { useEnterSubmit } from '@/lib/hooks/use-enter-submit'
 import { cn } from '@/lib/utils'
 import { useRouter } from 'next/navigation'
+import { NdviButton } from './ndvi-button'
 
 export interface PromptProps
   extends Pick<UseChatHelpers, 'input' | 'setInput'> {
@@ -65,7 +66,7 @@ export function PromptForm({
               <span className="sr-only">New Chat</span>
             </button>
           </TooltipTrigger>
-          <TooltipContent>New Chat</TooltipContent>
+          <TooltipContent>Новый чат</TooltipContent>
         </Tooltip>
         <Textarea
           ref={inputRef}

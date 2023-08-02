@@ -1,10 +1,10 @@
 import { auth } from '@/auth'
-import { LoginButton } from '@/components/login-button'
 import { LoginButtonGoogle } from '@/components/login-button-google'
 
 import { redirect } from 'next/navigation'
 import bg from '../../public/bg.jpg'
 import logo from '../../public/lg.png'
+import { NdviButton } from '@/components/ndvi-button'
 
 export default async function SignInPage() {
   const session = await auth()
@@ -13,8 +13,8 @@ export default async function SignInPage() {
     redirect('/')
   }
   return (
-    <div className="h-screen bg-cover bg-no-repeat xs:bg-center xs:bg-contain" style={{ backgroundImage: `url(${bg.src})`, marginTop: -64 }}>
-      <div className="relative bg-white px-6 shadow-xl ring-1 ring-gray-900/5 xl:mx-auto xl:max-w-2xl xl:rounded-lg opacity-[.9] mt-24" >
+    <div className="h-screen bg-cover bg-no-repeat xs:bg-center xs:bg-contain xs:bg-repeat" style={{ backgroundImage: `url(${bg.src})`, marginTop: -64 }}>
+      <div className="relative bg-white px-6 shadow-xl ring-1 ring-gray-900/5 xl:mx-auto xl:max-w-2xl xl:rounded-lg opacity-[.9] mt-14" >
         <div className="mx-auto max-w-xl">
           <div className="divide-y divide-gray-300/50">
             <div className="space-y-6 py-5 text-base leading-7 text-gray-600">
@@ -36,6 +36,13 @@ export default async function SignInPage() {
               </div>
               <div className='flex flex-col items-center mx-auto xs:mt-4'>
                 <LoginButtonGoogle />
+                <p
+                  className="mt-6 animate-fade-up text-center text-gray-500 opacity-75 xs:text-sm sm:text-base md:text-lg"
+                  style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
+                >
+                  Откройте уникальную интерактивную карту вегетативности всего мира и узнайте о растениях на любых участках земли в реальном времени.
+                </p>
+                <NdviButton />
               </div>
             </div>
           </div>
