@@ -10,7 +10,7 @@ export function NdviButton() {
     <Link href={'https://cultiva-ai.users.earthengine.app/view/ndvi'} target='_blank'>
       <Button
         type="button"
-        className="text-sm font-medium bg-inherit-500 hover:bg-green-700 text-inherit font-bold py-4 px-6 rounded-full text-center p-6">
+        className="text-sm font-medium bg-inherit-500 hover:bg-green-700 text-inherit py-2 px-4 rounded-full text-center">
         Карта для просмотра вегетационного индекса
       </Button>
       </Link>
