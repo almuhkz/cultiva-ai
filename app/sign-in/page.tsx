@@ -3,6 +3,7 @@ import { redirect } from 'next/navigation'
 import bg from '../../public/back10.gif'
 import { NdviButton } from '@/components/ndvi-button'
 import { LoginButtonGoogle } from '@/components/login-button-google'
+import { PredictButton } from '@/components/predict-button'
 
 
 
@@ -89,6 +90,35 @@ export default async function SignInPage() {
                   </p>
                   <div className='grid justify-items-center' >
                     <NdviButton></NdviButton>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="flex-auto">
+          <div className="relative bg-white mt-10 px-6 pb-2 shadow-xl ring-1 ring-gray-900/5 xl:mx-auto xl:max-w-2xl xl:rounded-lg opacity-[.9]" >
+            <div className="mx-auto max-w-xl">
+              <div className="divide-y divide-gray-300/50">
+                <div className="space-y-6 py-5 text-base leading-7 text-gray-600">
+                  <div className='animate-fade-up'
+                    style={{ animationDelay: "0.15s", animationFillMode: "forwards", color: "#66BB6A" }}
+                  >
+
+                    <div className='font-bold text-4xl text-center pt-4'>
+                      Болезни Растений
+                    </div>
+                  </div>
+                  <p
+                    className="mt-2 animate-fade-up text-center text-gray-500 opacity-75 xs:text-sm sm:text-base md:text-lg"
+                    style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
+                  >
+
+                    Этот инструмент анализирует фото растений и может предположить название возможных болезней. Он станет полезным помощником в уходе за растениями, позволяя вам своевременно реагировать на проблемы на ваших полях.
+                  </p>
+                  <div className='grid justify-items-center' >
+                    <PredictButton></PredictButton>
                   </div>
 
                 </div>
