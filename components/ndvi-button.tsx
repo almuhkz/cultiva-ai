@@ -2,18 +2,18 @@
 
 import * as React from 'react'
 import { Button } from '@/components/ui/button'
-import Link  from 'next/link';
+import Link from 'next/link';
 
 export function NdviButton() {
 
   return (
-    <Link href={'https://cultiva-ai.users.earthengine.app/view/ndvi'} target='_blank'>
+    <Link href={'https://cultiva-ai.users.earthengine.app/view/ndvi'} target='_blank' className='inline-block	'>
       <Button
-        type="button"
-        className="text-sm font-medium bg-inherit-500 hover:bg-green-700 text-inherit py-2 px-4 rounded-full text-center">
+        variant="outline"
+        className="text-sm font-medium hover:bg-logogreen hover:text-white  px-4 rounded-full">
         Карта для просмотра вегетационного индекса
       </Button>
-      </Link>
+    </Link>
   )
 
 }

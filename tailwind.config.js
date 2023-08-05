@@ -17,6 +17,7 @@ module.exports = {
         sans: ['var(--font-sans)', ...fontFamily.sans]
       },
       colors: {
+        'logogreen': '#66bb6a',
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
