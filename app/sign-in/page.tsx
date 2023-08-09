@@ -16,22 +16,24 @@ export default async function SignInPage() {
   }
   return (
     <div className="min-h-screen -mt-16 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${bg.src})` }}>
-      <div className="bg-white mx-4 xl:mx-auto mt-24 shadow-xl ring-1 ring-gray-900/5 mx-auto xl:max-w-2xl xl:rounded-lg opacity-[.9]" >
-        <div className="divide-y divide-gray-300/50">
-          <div className="space-y-6 py-5 text-base leading-7 text-gray-600">
-            <div className='animate-fade-up'
-              style={{ animationDelay: "0.15s", animationFillMode: "forwards", color: "#66BB6A" }}
-            >
-              <div className='font-bold text-4xl text-center pt-4'>
-                CultivaAI
+      <div className='grid grid-cols-1 mt-24 mx-4 xl:place-items-center'>
+        <div className="bg-white px-6 shadow-xl ring-1 ring-gray-900/5 mx-auto xl:max-w-2xl xl:rounded-lg opacity-[.9]" >
+          <div className="divide-y divide-gray-300/50">
+            <div className="space-y-6 py-5 text-base leading-7 text-gray-600">
+              <div className='animate-fade-up'
+                style={{ animationDelay: "0.15s", animationFillMode: "forwards", color: "#66BB6A" }}
+              >
+                <div className='font-bold text-4xl text-center pt-4'>
+                  CultivaAI
+                </div>
               </div>
+              <p
+                className="mt-2 animate-fade-up text-center text-gray-500 opacity-75 xs:text-sm sm:text-base md:text-lg"
+                style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
+              >
+                Ваш интеллектуальный набор инструментов для сельского хозяйства
+              </p>
             </div>
-            <p
-              className="mt-2 animate-fade-up text-center text-gray-500 opacity-75 xs:text-sm sm:text-base md:text-lg"
-              style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
-            >
-              Ваш интеллектуальный набор инструментов для сельского хозяйства
-            </p>
           </div>
         </div>
       </div>
