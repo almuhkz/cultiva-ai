@@ -15,118 +15,104 @@ export default async function SignInPage() {
     redirect('/')
   }
   return (
-    <div className="h-screen bg-cover bg-center bg-no-repeat xs:bg-green" style={{ backgroundImage: `url(${bg.src})` }}>
-      <div className="relative bg-white mt-4 px-6 shadow-xl ring-1 ring-gray-900/5 mx-auto xl:max-w-2xl xl:rounded-lg opacity-[.9]" >
-        <div className="mx-auto max-w-xl">
-          <div className="divide-y divide-gray-300/50">
-            <div className="space-y-6 py-5 text-base leading-7 text-gray-600">
-              <div className="">
+    <div className="min-h-screen -mt-16 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${bg.src})` }}>
+      <div className="bg-white mx-4 xl:mx-auto mt-24 shadow-xl ring-1 ring-gray-900/5 mx-auto xl:max-w-2xl xl:rounded-lg opacity-[.9]" >
+        <div className="divide-y divide-gray-300/50">
+          <div className="space-y-6 py-5 text-base leading-7 text-gray-600">
+            <div className='animate-fade-up'
+              style={{ animationDelay: "0.15s", animationFillMode: "forwards", color: "#66BB6A" }}
+            >
+              <div className='font-bold text-4xl text-center pt-4'>
+                CultivaAI
+              </div>
+            </div>
+            <p
+              className="mt-2 animate-fade-up text-center text-gray-500 opacity-75 xs:text-sm sm:text-base md:text-lg"
+              style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
+            >
+              Ваш интеллектуальный набор инструментов для сельского хозяйства
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className='grid gap-4 grid-cols-1 xl:grid-cols-3 pt-4 mx-4 mb-10'>
+        <div className="bg-white px-6 shadow-xl ring-1 ring-gray-900/5 xl:mx-auto xl:max-w-2xl xl:rounded-lg opacity-[.9]" >
+          <div className="mx-auto">
+            <div className="divide-y divide-gray-300/50">
+              <div className="space-y-6 py-5 text-base leading-7 text-gray-600">
                 <div className='animate-fade-up'
                   style={{ animationDelay: "0.15s", animationFillMode: "forwards", color: "#66BB6A" }}
                 >
                   <div className='font-bold text-4xl text-center pt-4'>
-                    CultivaAI
+                    Чат-Бот
                   </div>
                 </div>
                 <p
-                  className="mt-2 animate-fade-up text-center text-gray-500 opacity-75 xs:text-sm sm:text-base md:text-lg"
+                  className="animate-fade-up text-center text-gray-500 opacity-75 xs:text-sm sm:text-base md:text-lg"
                   style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
                 >
-                  Ваш интеллектуальный набор инструментов для сельского хозяйства
+                  Чат-бот предоставляет точные ответы и рекомендации по сельскому хозяйству, включая выбор культур, борьбу с вредителями и анализ рынка. Цель - поддержать вас в успешном ведении бизнеса и принятии обоснованных решений.
                 </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className='flex flex-row gap-4'>
-        <div className="flex-auto p-4 sm:w-1/3">
-          <div className="relative bg-white mt-10 px-6 shadow-xl ring-1 ring-gray-900/5 xl:mx-auto xl:max-w-2xl xl:rounded-lg opacity-[.9]" >
-            <div className="mx-auto max-w-xl">
-              <div className="divide-y divide-gray-300/50">
-                <div className="space-y-6 py-5 text-base leading-7 text-gray-600">
-                  <div className="">
-                    <div className='animate-fade-up'
-                      style={{ animationDelay: "0.15s", animationFillMode: "forwards", color: "#66BB6A" }}
-                    >
-                      <div className='font-bold text-4xl text-center pt-4'>
-                        Чат-Бот
-                      </div>
-                    </div>
-                    <p
-                      className="mt-2 animate-fade-up text-center text-gray-500 opacity-75 xs:text-sm sm:text-base md:text-lg"
-                      style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
-                    >
-                      CultivaAI - продвинутый помощник для фермеров в Казахстане. Он предоставляет точные ответы на вопросы о сельском хозяйстве, помогает с выбором культурных растений и борьбой с вредителями, а также предоставляет информацию о рынке и рекомендации для оптимизации вашего сельскохозяйственного бизнеса. Цель - поддержать вас в принятии обоснованных решений и успешном ведении предприятия.
-                    </p>
-                    <div className='grid justify-items-center p-4' >
-                      <LoginButtonGoogle></LoginButtonGoogle>
-                    </div>
-                  </div>
+                <div className='grid justify-items-center' >
+                  <LoginButtonGoogle></LoginButtonGoogle>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="flex-auto p-4 sm:w-1/3">
-          <div className="relative bg-white mt-10 px-6 pb-2 shadow-xl ring-1 ring-gray-900/5 xl:mx-auto xl:max-w-2xl xl:rounded-lg opacity-[.9]" >
-            <div className="mx-auto max-w-xl">
-              <div className="divide-y divide-gray-300/50">
-                <div className="space-y-6 py-5 text-base leading-7 text-gray-600">
-                  <div className='animate-fade-up'
-                    style={{ animationDelay: "0.15s", animationFillMode: "forwards", color: "#66BB6A" }}
-                  >
+        <div className="bg-white px-6 shadow-xl ring-1 ring-gray-900/5 xl:mx-auto xl:max-w-2xl xl:rounded-lg opacity-[.9]" >
+          <div className="mx-auto">
+            <div className="divide-y divide-gray-300/50">
+              <div className="space-y-6 py-5 text-base leading-7 text-gray-600">
+                <div className='animate-fade-up'
+                  style={{ animationDelay: "0.15s", animationFillMode: "forwards", color: "#66BB6A" }}
+                >
 
-                    <div className='font-bold text-4xl text-center pt-4'>
-                      Карта NDVI
-                    </div>
+                  <div className='font-bold text-4xl text-center pt-4'>
+                    Карта NDVI
                   </div>
-                  <p
-                    className="mt-2 animate-fade-up text-center text-gray-500 opacity-75 xs:text-sm sm:text-base md:text-lg"
-                    style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
-                  >
-
-                    Используйте уникальную интерактивную карту вегетативности всего мира! Она предоставляет актуальные данные о растительности в реальном времени на разных участках земли. Воспользуйтесь индексом NDVI для оценки плотности и здоровья растительности на территории с помощью спутниковых данных. Этот мощный инструмент поможет вам в исследованиях, принятии решений и анализе в областях, связанных с растительностью.
-                  </p>
-                  <div className='grid justify-items-center' >
-                    <NdviButton></NdviButton>
-                  </div>
-
                 </div>
+                <p
+                  className="animate-fade-up text-center text-gray-500 opacity-75 xs:text-sm sm:text-base md:text-lg"
+                  style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
+                >
+                  Уникальная карта показывает состояние растений по всему миру в реальном времени. Этот инструмент поможет вам легко понять, где растения здоровы и густо растут, и принять правильные решения для вашего сельского хозяйства.
+                </p>
+                <div className='grid justify-items-center' >
+                  <NdviButton></NdviButton>
+                </div>
+
               </div>
             </div>
           </div>
         </div>
-        <div className="flex-auto p-4 sm:w-1/3">
-          <div className="relative bg-white mt-10 px-6 pb-2 shadow-xl ring-1 ring-gray-900/5 xl:mx-auto xl:max-w-2xl xl:rounded-lg opacity-[.9]" >
-            <div className="mx-auto max-w-xl">
-              <div className="divide-y divide-gray-300/50">
-                <div className="space-y-6 py-5 text-base leading-7 text-gray-600">
-                  <div className='animate-fade-up'
-                    style={{ animationDelay: "0.15s", animationFillMode: "forwards", color: "#66BB6A" }}
-                  >
+        <div className="bg-white px-6 shadow-xl ring-1 ring-gray-900/5 xl:mx-auto xl:max-w-2xl xl:rounded-lg opacity-[.9]" >
+          <div className="mx-auto">
+            <div className="divide-y divide-gray-300/50">
+              <div className="space-y-6 py-5 text-base leading-7 text-gray-600">
+                <div className='animate-fade-up'
+                  style={{ animationDelay: "0.15s", animationFillMode: "forwards", color: "#66BB6A" }}
+                >
 
-                    <div className='font-bold text-4xl text-center pt-4'>
-                      Болезни Растений
-                    </div>
+                  <div className='font-bold text-4xl text-center pt-4'>
+                    Болезни Растений
                   </div>
-                  <p
-                    className="mt-2 animate-fade-up text-center text-gray-500 opacity-75 xs:text-sm sm:text-base md:text-lg"
-                    style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
-                  >
-
-                    Этот инструмент анализирует фото растений и может предположить название возможных болезней. Он станет полезным помощником в уходе за растениями, позволяя вам своевременно реагировать на проблемы на ваших полях.
-                  </p>
-                  <div className='grid justify-items-center' >
-                    <PredictButton></PredictButton>
-                  </div>
-
                 </div>
+                <p
+                  className="animate-fade-up text-center text-gray-500 opacity-75 xs:text-sm sm:text-base md:text-lg"
+                  style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
+                >
+
+                  Этот инструмент анализирует фото растений и может предположить название возможных болезней. Он станет полезным помощником в уходе за растениями, позволяя вам своевременно реагировать на проблемы на ваших полях.
+                </p>
+                <div className='grid justify-items-center' >
+                  <PredictButton></PredictButton>
+                </div>
+
               </div>
             </div>
           </div>
         </div>
-
       </div>
     </div>
   )

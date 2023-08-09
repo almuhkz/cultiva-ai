@@ -11,7 +11,7 @@ export function NdviButton() {
       <Button
         variant="outline"
         className="text-sm font-medium hover:bg-logogreen hover:text-white  px-4 rounded-full">
-        Карта для просмотра вегетационного индекса
+        Карта NDVI
       </Button>
     </Link>
   )
