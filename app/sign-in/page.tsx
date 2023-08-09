@@ -31,7 +31,7 @@ export default async function SignInPage() {
                 className="mt-2 animate-fade-up text-center text-gray-500 opacity-75 xs:text-sm sm:text-base md:text-lg"
                 style={{ animationDelay: "0.25s", animationFillMode: "forwards" }}
               >
-                Ваш интеллектуальный набор инструментов для сельского хозяйства
+                Ваш набор AI инструментов для сельского хозяйства
               </p>
             </div>
           </div>
