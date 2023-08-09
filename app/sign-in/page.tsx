@@ -15,8 +15,8 @@ export default async function SignInPage() {
     redirect('/')
   }
   return (
-    <div className="h-screen bg-cover bg-center bg-no-repeat xs:bg-repeat" style={{ backgroundImage: `url(${bg.src})` }}>
-      <div className="relative bg-white mt-4 px-6 shadow-xl ring-1 ring-gray-900/5 xl:mx-auto xl:max-w-2xl xl:rounded-lg opacity-[.9]" >
+    <div className="h-screen bg-cover bg-center bg-no-repeat xs:bg-green" style={{ backgroundImage: `url(${bg.src})` }}>
+      <div className="relative bg-white mt-4 px-6 shadow-xl ring-1 ring-gray-900/5 mx-auto xl:max-w-2xl xl:rounded-lg opacity-[.9]" >
         <div className="mx-auto max-w-xl">
           <div className="divide-y divide-gray-300/50">
             <div className="space-y-6 py-5 text-base leading-7 text-gray-600">
@@ -39,8 +39,8 @@ export default async function SignInPage() {
           </div>
         </div>
       </div>
-      <div className='flex'>
-        <div className="flex-auto">
+      <div className='flex flex-row gap-4'>
+        <div className="flex-auto p-4 sm:w-1/3">
           <div className="relative bg-white mt-10 px-6 shadow-xl ring-1 ring-gray-900/5 xl:mx-auto xl:max-w-2xl xl:rounded-lg opacity-[.9]" >
             <div className="mx-auto max-w-xl">
               <div className="divide-y divide-gray-300/50">
@@ -68,7 +68,7 @@ export default async function SignInPage() {
             </div>
           </div>
         </div>
-        <div className="flex-auto">
+        <div className="flex-auto p-4 sm:w-1/3">
           <div className="relative bg-white mt-10 px-6 pb-2 shadow-xl ring-1 ring-gray-900/5 xl:mx-auto xl:max-w-2xl xl:rounded-lg opacity-[.9]" >
             <div className="mx-auto max-w-xl">
               <div className="divide-y divide-gray-300/50">
@@ -97,7 +97,7 @@ export default async function SignInPage() {
             </div>
           </div>
         </div>
-        <div className="flex-auto">
+        <div className="flex-auto p-4 sm:w-1/3">
           <div className="relative bg-white mt-10 px-6 pb-2 shadow-xl ring-1 ring-gray-900/5 xl:mx-auto xl:max-w-2xl xl:rounded-lg opacity-[.9]" >
             <div className="mx-auto max-w-xl">
               <div className="divide-y divide-gray-300/50">
