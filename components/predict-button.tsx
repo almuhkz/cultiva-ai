@@ -11,7 +11,7 @@ export function PredictButton() {
       <Button
         variant="outline"
         className="text-sm font-medium hover:bg-logogreen hover:text-white  px-4 rounded-full">
-        Классификатор Болезней Растений
+        Болезни Растений
       </Button>
     </Link>
   )
