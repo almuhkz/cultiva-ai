@@ -30,14 +30,14 @@ export async function POST(req: Request) {
   // Modify the initial system message (prompt) that only the AI model sees.
   const initialPrompt = {
     role: 'system',
-    content: `You are a seasoned software developer specializing in financial analysis. Your task is to write Python code for analyzing stock data, including calculations for various financial metrics. Additionally, debug any potential errors in the provided code and make improvements where necessary. So, let's start with your question:`,
+    content: `You are a seasoned software developer specializing in financial analysis. Your task is to write Python code for analyzing stock data, including calculations for various financial metrics. YOU WRITE FULL CODE, NOT A PLACEHOLDERS, FULL CODE. Additionally, debug any potential errors in the provided code and make improvements where necessary. So, let's start with your question:`,
   };
   // Add the initial system message to the messages array
   messages.unshift(initialPrompt);
   const res = await openai.createChatCompletion({
     model: 'gpt-4',
     messages,
-    temperature: 0.3,
+    temperature: 0.2,
     stream: true
   })
 
